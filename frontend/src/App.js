@@ -1,12 +1,17 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
+import Landingfile from "./screens/landingpage/Landingfile";
 
 function App() {
   return (
     <>
-      {/* const hello = 1 */}
-      <div className="App">Hello world</div>
-      <div className="App">Hello world</div>
+      <Header />
+      <main>
+        <Landingfile />
+      </main>
+      <Footer />
     </>
   );
 }
