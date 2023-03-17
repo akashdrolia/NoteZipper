@@ -1,9 +1,11 @@
 const express = require("express");
 const notes = require("./Data/notes");
 const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 
 const app = express();
 dotenv.config();
+connectDB();
 
 app.get("/api/notes", (req, res) => {
   res.json(notes);
